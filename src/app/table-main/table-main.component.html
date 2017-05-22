@@ -1,22 +1,19 @@
-<div id="toolbar" class="btn-group">
-    <button type="button" class="btn btn-default">
-        <i class="glyphicon glyphicon-plus"></i>
-    </button>
-    <button type="button" class="btn btn-default">
-        <i class="glyphicon glyphicon-heart"></i>
-    </button>
-    <button type="button" class="btn btn-default">
-        <i class="glyphicon glyphicon-trash"></i>
-    </button>
-</div>
-<table data-toggle="table"
+<app-table-nav></app-table-nav>
+<table data-toggle ="table"
+       data-classes="table table-hover table-condensed"
+       data-striped="true"
        data-url="https://jsonplaceholder.typicode.com/posts"
        data-search="true"
-       data-show-refresh="true"
-  
-       data-show-columns="true"
        data-toolbar="#toolbar"
-      data-show-export="true">
+       data-search-align = "left"
+       data-toolbar-align = "right" 
+       data-height="500"
+       data-pagination="true"
+       data-page-list="[5, 10, 20, 50, 100, 200]"
+       data-show-export="true"
+       data-show-refresh="true"
+ >
+
     <thead>
     <tr>
         <th data-field="userId" data-sortable = "true" data-halign="center" data-align="left">User ID</th>
